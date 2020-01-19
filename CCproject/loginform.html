@@ -1,0 +1,110 @@
+<html>
+    <head>
+        <!--CSS-->
+            <!--style-->
+            <link rel="stylesheet" href="styles/style.css">
+            <link rel="stylesheet" href="styles/loginform.css">
+            <!--bootstrap-->
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <!--JS-->
+            <!--bootstrap-->
+            <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+            <!--fontawesome-->
+            <script src="https://kit.fontawesome.com/387f5314d4.js" crossorigin="anonymous"></script>
+            <!--jquery-->
+            <script src="scripts/jquery-3.4.1.min.js"></script>
+        <!--pagesetup-->
+            <meta charset="utf-8">
+    </head>
+
+    <body>
+        <h1 class="logintitle">ログイン/新規登録</h1>
+        <hr class="my-3" align="left">
+        <div class="container" id="loginform_deta">
+            <table border="0">
+                <form action="loginform.php" method="POST">
+                    <tr class="row">
+                        <td class="col-6">
+                            <p class="table_title">姓</p>
+                            <input type="text" name="surname" size="38" maxlength="32">
+                        </td>
+                        <td class="col-6">
+                            <p class="table_title">名</p>
+                            <input type="text" name="firstname" size="38" maxlength="32">
+                        </td>
+                    </tr>
+                    <tr class="row">
+                        <td class="col-6">
+                            <p class="table_title">セイ</p>
+                            <input type="text" name="surname_katakana" size="38" maxlength="32">
+                        </td>
+                        <td class="col-6">
+                            <p class="table_title">ナマエ</p>
+                            <input type="text" name="firstname_katakana" size="38" maxlength="32">
+                        </td>
+                    </tr>
+                    <tr class="row">
+                        <td class="col-6">
+                            <p class="table_title">メールアドレス</p>
+                        </td>
+                        <td class="col-6">
+                            <input type="text" name="mailaddress" size="38">
+                        </td>
+                    </tr>
+                    <tr class="row">
+                        <td class="col-6">
+                            <p class="table_title">メールアドレス（確認用）</p>
+                        </td>
+                        <td class="col-6">
+                            <input type="text" name="mailaddress_confirmation" size="38" autocomplete="OFF">
+                        </td>
+                    </tr>
+                    <tr class="row">
+                        <td class="col-6">
+                            <p class="table_title">パスワード</p>
+                        </td>
+                        <td class="col-6">
+                            <input type="password" name="password" size="38" maxlength="18" autocomplete="OFF">
+                        </td>
+                    </tr>
+                    <tr class="row">
+                        <td class="col-6">
+                            <p class="table_title">パスワード（確認用）</p>
+                        </td>
+                        <td class="col-6">
+                            <input type="password" name="password_confirmation" size="38" maxlength="18" autocomplete="OFF">
+                        </td>
+                    </tr>
+                    <tr class="row">
+                        <td class="col-6">
+                            <p class="table_title">生年月日</p>
+                        </td>
+                        <td class="col-6">
+                            <input type="date" name="birthday" size="38">
+                        </td>
+                    </tr>
+                    <tr class="row">
+                        <td class="col-6">
+                            <p class="table_title">所属</p>
+                        </td>
+                        <td class="col-6">
+                            <select name="belongs">
+                                <option value="jhs">中学生</option>
+                                <option value="hs">高校生</option>
+                                <option value="uns">大学生</option>
+                                <option value="other">その他</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <tb>
+                            <input type="submit" value="送信">
+                        </tb>
+                    </tr>
+                </form>
+            </table>
+        </div>
+    </body>
+</html>
